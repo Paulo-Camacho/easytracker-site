@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Tracker — Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #000;
+      color: #e5e7eb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 48px 24px 32px;
+      text-align: center;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo-ring {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: #111;
+      border: 2px solid #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 24px rgba(34, 197, 94, 0.25);
+    }
+
+    .logo-ring svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 15px;
+      color: #6b7280;
+    }
+
+    main {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      flex: 1;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #1f1f1f;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #22c55e;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #9ca3af;
+      line-height: 1.65;
+    }
+
+    .card p + p {
+      margin-top: 10px;
+    }
+
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 13px 20px;
+      background: #0d1f14;
+      border: 1px solid #22c55e;
+      border-radius: 10px;
+      color: #22c55e;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .email-link:hover {
+      background: #132b1c;
+    }
+
+    .faq-item {
+      padding: 16px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-item:first-child {
+      padding-top: 0;
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e5e7eb;
+      margin-bottom: 6px;
+    }
+
+    .faq-a {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid #1a1a1a;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    footer a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-ring">
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 18h4l3-8 4 16 4-12 3 8h6" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <h1>Easy Tracker</h1>
+  <p>Macros &amp; Gym — Support</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Contact Us</h2>
+    <p>Having an issue? Feature request? Something look wrong? We reply to every message.</p>
+    <a class="email-link" href="mailto:easytrackersupport@protonmail.com">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      easytrackersupport@protonmail.com
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I delete my account?</div>
+      <div class="faq-a">Open the app → hamburger menu (top-left) → Settings → Delete Account. This permanently removes your account and all your data. It cannot be undone.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How does the AI food estimator work?</div>
+      <div class="faq-a">Describe your meal in plain text or snap a photo. The AI returns calorie, protein, carb, and fat estimates. Estimates are approximate — use the barcode scanner or manual entry for packaged foods.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is Pro?</div>
+      <div class="faq-a">Free tier includes unlimited manual logging, barcode scanning, and gym tracking. Pro unlocks unlimited AI text and photo macro estimates.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I add friends?</div>
+      <div class="faq-a">Go to the Friends tab and share your 6-character code. Have them enter it on their end to connect. The social feed is friends-only.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">I forgot my gamertag / want to change it.</div>
+      <div class="faq-a">Gamertag changes aren't supported yet. Email us and we'll handle it manually.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">My streak reset but I logged every day.</div>
+      <div class="faq-a">Streaks require at least one food entry before midnight in your local timezone. If yours reset unexpectedly, email us with the affected dates.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>We don't sell your data. We don't use it for advertising. Your logs stay yours.</p>
+    <p style="margin-top: 10px;">
+      <a href="privacy.html" style="color: #22c55e; text-decoration: none; font-size: 14px;">Read the full Privacy Policy →</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Paulo Camacho &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
