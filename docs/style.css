@@ -7,6 +7,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* Let long words like email addresses wrap instead of overflowing on narrow screens */
+  overflow-wrap: anywhere;
 }
 
 header {
@@ -236,6 +238,11 @@ hr {
   font-weight: 600;
   text-decoration: none;
   transition: background 0.15s;
+  max-width: 100%;
+}
+
+.email-link svg {
+  flex-shrink: 0;
 }
 
 .email-link:hover {
@@ -267,4 +274,24 @@ hr {
   font-size: 14px;
   color: #6b7280;
   line-height: 1.6;
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  main {
+    padding: 28px 16px 48px;
+  }
+
+  .card {
+    padding: 22px 20px;
+  }
+
+  .meta-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .meta-row + .meta-row {
+    margin-top: 6px;
+  }
 }
