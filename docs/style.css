@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* Let long words like email addresses wrap instead of overflowing on narrow screens */
+  /* let long words like email addresses wrap instead of overflowing on narrow screens */
   overflow-wrap: anywhere;
 }
 
@@ -47,7 +47,7 @@ main {
   flex: 1;
 }
 
-/* Support page uses a narrower column */
+/* support page uses a narrower column */
 main.narrow {
   max-width: 600px;
 }
@@ -195,7 +195,7 @@ hr {
   margin: 8px 0 32px;
 }
 
-/* Support page */
+/* support page */
 
 .card {
   background: #fff;
@@ -276,7 +276,7 @@ hr {
   line-height: 1.6;
 }
 
-/* Phones */
+/* phones */
 @media (max-width: 480px) {
   main {
     padding: 28px 16px 48px;
